@@ -1,3 +1,9 @@
+@import "assets/bootstrap/css/bootstrap.css";
+@import "assets/css/skin-4.css";
+@import "assets/css/style.css";
+@import "assets/css/select2.min.css";
+@import "assets/css/smoothproducts.css";
+@import "assets/plugins/rating/bootstrap-rating.css";
 h1 {
   color: #369;
   font-family: Arial, Helvetica, sans-serif;

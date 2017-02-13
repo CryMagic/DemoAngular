@@ -4,6 +4,13 @@
 @import "assets/css/select2.min.css";
 @import "assets/css/smoothproducts.css";
 @import "assets/plugins/rating/bootstrap-rating.css";
+@import "assets/css/blog.css";
+@import "assets/css/ion.checkRadio.html";
+@import "assets/css/ion.checkRadio.cloudy.html";
+@import "assets/css/jquery.minimalect.min.css";
+@import "assets/css/footable-0.1.css";
+@import "assets/css/footable.sortable-0.1.css";
+
 h1 {
   color: #369;
   font-family: Arial, Helvetica, sans-serif;

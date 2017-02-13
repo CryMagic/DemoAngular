@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, AfterViewInit} from '@angular/core';
 
 @Component({
     moduleId: module.id,
@@ -6,4 +6,8 @@ import { Component } from '@angular/core';
     templateUrl: 'account.component.html'
 })
 
-export class AccountComponent{}
+export class AccountComponent implements AfterViewInit{
+    ngAfterViewInit(){
+
+    }
+}

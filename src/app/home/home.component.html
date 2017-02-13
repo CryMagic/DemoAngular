@@ -3,7 +3,7 @@
     <div class="row featuredPostContainer globalPadding style2">
         <h3 class="section-title style2 text-center"><span>NEW ARRIVALS</span></h3>
         <div id="productslider" class="owl-carousel owl-theme">
-            <div class="item">
+            <div class="item" *ngFor="let item of Array" >
                 <div class="product">
                     <a class="add-fav tooltipHere" data-toggle="tooltip" data-original-title="Add to Wishlist" data-placement="left">
                         <i class="glyphicon glyphicon-heart"></i>

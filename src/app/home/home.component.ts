@@ -1,4 +1,4 @@
-import { Component, AfterViewInit, ElementRef} from '@angular/core';
+import { Component, AfterViewInit, ElementRef, OnInit} from '@angular/core';
 declare var $:any;
 
 @Component({
@@ -7,7 +7,7 @@ declare var $:any;
     templateUrl: 'home.component.html'
 })
 
-export class HomeComponent implements AfterViewInit{
+export class HomeComponent implements AfterViewInit, OnInit{
     public Array: string[] = ["Trần Quốc Thiện","Trần Khải Ny","Trần Quốc Biển"];   
     constructor(private el:ElementRef){}
     ngAfterViewInit() {
@@ -37,5 +37,10 @@ export class HomeComponent implements AfterViewInit{
                 latestProductSlider.trigger('owl.prev');
             })
         })        
+    }
+    ngOnInit() {
+        //Called after the constructor, initializing input properties, and the first call to ngOnChanges.
+        //Add 'implements OnInit' to the class.
+        
     }
 }

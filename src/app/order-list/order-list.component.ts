@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, AfterViewInit, ElementRef } from '@angular/core';
+declare var $:any;
 
 @Component({
     moduleId: module.id,
@@ -6,4 +7,6 @@ import { Component } from '@angular/core';
     templateUrl: 'order-list.component.html'
 })
 
-export class OrderListComponent{}
+export class OrderListComponent{
+    
+}

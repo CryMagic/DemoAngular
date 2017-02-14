@@ -15,6 +15,45 @@ export class CheckoutComponent implements AfterViewInit{
                 checkboxClass: 'icheckbox_square-green iCheck-margin',
                 radioClass: 'iradio_square-green iChk iCheck-margin'
             });
+            $('input#newAddress').on('ifChanged', function(event:any) {
+                //alert(event:any.type + ' callback');
+                $('#newBillingAddressBox').collapse("show");
+                $('#exisitingAddressBox').collapse("hide");
+
+            });
+
+            $('input#exisitingAddress').on('ifChanged', function(event:any) {
+                //alert(event:any.type + ' callback');
+                $('#newBillingAddressBox').collapse("hide");
+                $('#exisitingAddressBox').collapse("show");
+            });
+
+
+            $('input#newShippingAddress').on('ifChanged', function(event:any) {
+                //alert(event:any.type + ' callback');
+                $('#newShippingAddressBox').collapse("show");
+
+            });
+
+            $('input#existingShippingAddress').on('ifChanged', function(event:any) {
+                //alert(event:any.type + ' callback');
+                $('#newShippingAddressBox').collapse("hide");
+
+            });
+
+
+            $('input#creditCard').on('ifChanged', function(event:any) {
+                //alert(event:any.type + ' callback');
+                $('#creditCardCollapse').collapse("toggle");
+
+            });
+
+
+            $('input#CashOnDelivery').on('ifChanged', function(event:any) {
+                //alert(event:any.type + ' callback');
+                $('#CashOnDeliveryCollapse').collapse("toggle");
+
+            });
         })
     }
 }

@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, AfterViewInit } from '@angular/core';
+declare var $:any;
 
 @Component({
     moduleId: module.id,
@@ -6,4 +7,8 @@ import { Component } from '@angular/core';
     templateUrl: 'order-status.component.html'
 })
 
-export class OrderStatusComponent{}
+export class OrderStatusComponent implements AfterViewInit{
+    ngAfterViewInit(){
+        $('.footable').footable();
+    }
+}

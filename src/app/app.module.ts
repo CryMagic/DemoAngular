@@ -30,6 +30,7 @@ import { OrderListComponent } from './order-list/order-list.component';
 import { OrderStatusComponent } from './order-status/order-status.component';
 import { UserInformationComponent } from './user-information/user-information.component';
 import { WishlistComponent } from './wishlist/wishlist.component';
+import { ProductModalComponent } from './shared/modal-product/modal-product.component';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule, HttpModule, appRoutes ],
@@ -56,9 +57,10 @@ import { WishlistComponent } from './wishlist/wishlist.component';
     OrderListComponent,
     OrderStatusComponent,
     UserInformationComponent,
-    WishlistComponent
+    WishlistComponent,
+    ProductModalComponent
  ],
-  providers: [],  
+  
   bootstrap:    [ AppComponent ]
   
 })

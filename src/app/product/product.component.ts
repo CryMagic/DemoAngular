@@ -10,6 +10,7 @@ declare var $:any;
 export class ProductComponent implements AfterViewInit{
     constructor(private el:ElementRef){}
     ngAfterViewInit() {
+        
         $(this.el.nativeElement).ready(function(){
             function customPager() {
                 $.each(this.owl.userItems, function(i:any) {
